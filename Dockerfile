@@ -2,7 +2,7 @@ FROM amazonlinux:latest
 RUN yum install -y amazon-linux-extras
 RUN amazon-linux-extras install python3
 RUN pip3 install flask-sock
-RUN yum -y install which unzip aws-cli
+RUN yum -y install which unzip 
 RUN amazon-linux-extras install nginx1
 WORKDIR /spinnyapp
 COPY install.txt install.txt
